@@ -1,3 +1,13 @@
 {
-  "extends": "next/core-web-vitals"
+    "env": {
+        "browser": true,
+        "worker": true,
+        "es2022": true
+    },
+    "extends": [
+        "next/core-web-vitals",
+        "airbnb-base",
+        "plugin:prettier/recommended" // has to be the last one
+    ],
+    "plugins": ["prettier"]
 }
